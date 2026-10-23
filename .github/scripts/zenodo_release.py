@@ -63,11 +63,17 @@ meta["related_identifiers"] = related
 
 # ---- find an earlier version of this repository --------------------------
 previous = None
-for dep in call("GET", f"{BASE}/deposit/depositions", params={"size": 200, "sort": "mostrecent"}):
-    ids = [r.get("identifier") for r in dep.get("metadata", {}).get("related_identifiers", [])]
-    if dep.get("submitted") and REPO_URL in ids:
-        previous = dep
+page = 1
+while previous is None:
+    batch = call("GET", f"{BASE}/deposit/depositions", params={"size": 100, "page": page, "sort": "mostrecent"})
+    for dep in batch:
+        ids = [r.get("identifier") for r in dep.get("metadata", {}).get("related_identifiers", [])]
+        if dep.get("submitted") and REPO_URL in ids:
+            previous = dep
+            break
+    if len(batch) < 100:
         break
+    page += 1
 
 # ---- create the draft -----------------------------------------------------
 if previous:
