@@ -1,13 +1,13 @@
 # Publishes every GitHub release of a PUBLIC repository to Zenodo and adds the DOI to the release notes.
 # - First release: creates a new Zenodo record (new DOI).
 # - Later releases: create a new version of the same record (same concept DOI).
-# - Pre-releases and private repositories are skipped.
+# - Pre-releases and private repositories are skipped; unticking "pre-release" later triggers it.
 # Needs the organization secret ZENODO_TOKEN. Set the variable ZENODO_SANDBOX=true to test on sandbox.zenodo.org.
 name: Zenodo DOI on release
 
 on:
   release:
-    types: [published]
+    types: [released]   # a release was published, or a pre-release was turned into a release
 
 permissions:
   contents: write
