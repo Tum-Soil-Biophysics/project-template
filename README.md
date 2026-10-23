@@ -46,6 +46,16 @@ python code/[script].py --input data/example
 
 [Describe the main steps, inputs and outputs.]
 
+## Releases and DOI
+
+Every **release** of this repository gets a Zenodo DOI automatically, once the repository is **public**.
+
+1. Fill in `.zenodo.json` (title, authors, description, keywords). The release stops if placeholders are left.
+2. On GitHub: **Releases → Draft a new release**, tag `v1.0`, **Publish release**.
+3. After about two minutes the DOI appears at the bottom of the release notes.
+
+Pre-releases and private repositories are skipped. Later releases (`v1.1`, `v2.0`) become new versions of the same Zenodo record. A DOI is permanent, so release only at milestones (submission, acceptance, bug fix).
+
 ## Authors
 
 [Name], [Name], Mohsen Zarebanadkouki
