@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "[Repository name]: [short description]"
+type: software
+authors:
+  - family-names: "[Family name]"
+    given-names: "[Given name]"
+    affiliation: "Technical University of Munich"
+  - family-names: "Zarebanadkouki"
+    given-names: "Mohsen"
+    affiliation: "Technical University of Munich"
+repository-code: "https://github.com/Tum-Soil-Biophysics/[repository]"
+url: "https://www.lss.ls.tum.de/sbe/"
+license: MIT
+version: "1.0.0"
+date-released: "[YYYY-MM-DD]"
+keywords:
+  - "[keyword]"
+# Add the related article once its DOI is known:
+# preferred-citation:
+#   type: article
+#   authors:
+#     - family-names: "[Family name]"
+#       given-names: "[Given name]"
+#   title: "[Article title]"
+#   journal: "[Journal]"
+#   year: [Year]
+#   doi: "[DOI]"
