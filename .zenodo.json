@@ -3,10 +3,24 @@
   "upload_type": "software",
   "description": "[What the code does, which article it belongs to, and how to run it. Two to four sentences.]",
   "creators": [
-    {"name": "[Family name], [Given name]", "affiliation": "Technical University of Munich"},
-    {"name": "Zarebanadkouki, Mohsen", "affiliation": "Technical University of Munich"}
+    {
+      "name": "[Family name], [Given name]",
+      "affiliation": "Technical University of Munich"
+    },
+    {
+      "name": "Zarebanadkouki, Mohsen",
+      "affiliation": "Technical University of Munich"
+    }
   ],
   "license": "mit",
-  "keywords": ["soil physics", "[keyword]"],
-  "access_right": "open"
+  "keywords": [
+    "soil physics",
+    "[keyword]"
+  ],
+  "access_right": "open",
+  "communities": [
+    {
+      "identifier": "tum-sbe"
+    }
+  ]
 }
