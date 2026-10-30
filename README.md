@@ -48,13 +48,13 @@ python code/[script].py --input data/example
 
 ## Releases and DOI
 
-Every **release** of this repository gets a Zenodo DOI automatically, once the repository is **public**.
+Every **release** of this repository gets a Zenodo DOI automatically, once the repository is **public**. The record is placed in the community [TUM Soil Biophysics](https://zenodo.org/communities/tum-sbe). The automation lives centrally in [Tum-Soil-Biophysics/.github](https://github.com/Tum-Soil-Biophysics/.github); this repository only calls it.
 
 1. Fill in `.zenodo.json` (title, authors, description, keywords). The release stops if placeholders are left.
-2. On GitHub: **Releases → Draft a new release**, tag `v1.0`, **Publish release**.
-3. After about two minutes the DOI appears at the bottom of the release notes.
+2. Check it: **Actions → Zenodo DOI on release → Run workflow**, enter the tag, keep **dry run** ticked. Nothing is published.
+3. At acceptance, Prof. Zare makes the repository public and publishes the release (**Releases → Draft a new release**, tag `v1.0.0`). After about two minutes the DOI appears in the release notes.
 
-Pre-releases and private repositories are skipped. Later releases (`v1.1`, `v2.0`) become new versions of the same Zenodo record. A DOI is permanent, so release only at milestones (submission, acceptance, bug fix).
+Pre-releases and private repositories are skipped. Later releases (`v1.1.0`, `v2.0.0`) become new versions of the same Zenodo record. Files attached to a release (e.g. an installer) are archived too.
 
 ## Authors
 

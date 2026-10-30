@@ -41,6 +41,8 @@ Filled example (Stomify):
 
 Rules: keep the quotes and commas exactly as shown; names as `Family, Given`; replace every `[...]`. Fill in `CITATION.cff` the same way.
 
+**Check your file:** **Actions → Zenodo DOI on release → Run workflow**, enter `v1.0.0`, keep **dry run** ticked, **Run workflow**. A green tick means `.zenodo.json` is fine; a red cross shows what to fix. Nothing is published.
+
 ## 4. Release and DOI
 
 You do not release. At acceptance, Prof. Zare makes the repository public and publishes the release; the DOI is then created automatically. If your code **already has a Zenodo DOI**, say so: the automatic release would create a second one.
