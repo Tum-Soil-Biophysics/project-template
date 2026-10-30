@@ -1,6 +1,6 @@
 # [Project title]
 
-> **How to use this template:** click **Use this template → Create a new repository**, choose the owner **Tum-Soil-Biophysics**, keep it **Private**, and name it `Topic_Method` (e.g. `RWU_NeutronRadiographyD2O_InverseModelling`). Then replace every `[...]` below and delete this note.
+> **How to use this template:** click **Use this template → Create a new repository**, choose the owner **Tum-Soil-Biophysics**, keep it **Private**, and name it `Topic_Method` (e.g. `RWU_NeutronRadiographyD2O_InverseModelling`). Then replace every `[...]` below and delete this note. Step-by-step tips for first-time users: [docs/FIRST_STEPS.md](docs/FIRST_STEPS.md).
 
 [One or two sentences: what this code does and which question it answers.]
 
